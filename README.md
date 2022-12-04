@@ -21,7 +21,9 @@ composer require faicchia/boring-avatars
 ## Usage
 
 ```php
-BoringAvatar::make()
+use Faicchia\BoringAvatars\BoringAvatar;
+
+$avatar = BoringAvatar::make()
     ->size(60)
     ->variant('bauhaus')
     ->name('James Smith')

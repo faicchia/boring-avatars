@@ -12,6 +12,9 @@
     "require": {
         "php": "^8.0"
     },
+    "require-dev": {
+        "pestphp/pest": "^1.22"
+    },
     "autoload": {
         "psr-4": {
             "Faicchia\\BoringAvatars\\": "src/"
@@ -19,9 +22,6 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "require-dev": {
-        "pestphp/pest": "^1.22"
-    },
     "config": {
         "allow-plugins": {
             "pestphp/pest-plugin": true
