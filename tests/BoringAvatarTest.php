@@ -7,11 +7,11 @@ namespace Faicchia\BoringAvatars\Tests;
 use Faicchia\BoringAvatars\BoringAvatar;
 
 beforeEach(
-    fn() => $this->avatar = BoringAvatar::make()
+    fn () => $this->avatar = BoringAvatar::make()
 );
 
 it('returns an instance', function () {
-    expect( $this->avatar )
+    expect($this->avatar)
         ->toBeInstanceOf(BoringAvatar::class);
 });
 
@@ -76,16 +76,16 @@ it('can generate the url with colors', function () {
         ->name('Mario Rossi')
         ->colors(['#2C5545', '063971', '2f353b'])
         ->url();
-    
+
     expect($url)->toBe('https://source.boringavatars.com/bauhaus/60/Mario+Rossi?colors=2c5545,063971,2f353b');
 });
 
 it('can generate the url without colors', function () {
     $url = $this->avatar
-        ->size(60)    
+        ->size(60)
         ->variant('bauhaus')
         ->name('Mario Rossi')
         ->url();
-    
+
     expect($url)->toBe('https://source.boringavatars.com/bauhaus/60/Mario+Rossi');
 });
